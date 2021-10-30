@@ -15,8 +15,19 @@
   padding-bottom: 40px;
   width: 300px;
 }
-
 .banner_info > button {
   color: white;
   background-color: #ff7779;
+  text-transform: inherit;
+  /* removes the all caps default from material ui */
+  margin-top: 20px;
+  font-weight: 600;
+}
+.banner_info > button:hover {
+  /* changes color while hovering */
+  background-color: white;
+  color: #ff7779;
+}
+.banner_info > h5 {
+  margin-top: 10px;
 }
