@@ -4,7 +4,7 @@ import "./Banner.css";
 import Search from "./Search.js";
 
 const Banner = () => {
-  const [buttonText, setButtonText] = useState(true);
+  const [buttonText, setButtonText] = useState(false);
 
   const toggleButtonText = () => {
     setButtonText(!buttonText);
@@ -20,7 +20,7 @@ const Banner = () => {
             className="banner_searchbutton"
             variant="outlined"
           >
-            Search Dates
+            Hide
           </Button>
         ) : (
           <Button
@@ -28,7 +28,7 @@ const Banner = () => {
             className="banner_searchbutton"
             variant="outlined"
           >
-            Hide
+            Search Dates
           </Button>
         )}
       </div>
