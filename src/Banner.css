@@ -31,3 +31,15 @@
 .banner_info > h5 {
   margin-top: 10px;
 }
+.banner_search {
+  display: flex;
+  flex-direction: column;
+}
+.banner_searchbutton {
+  /* whenever you give material ui a class it must be styled with important */
+  color: #ff7779 !important;
+  background-color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  /* removes the all caps default from material ui */
+}
