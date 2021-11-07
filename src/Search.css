@@ -15,13 +15,28 @@
   left: 0;
   top: 380 px;
 }
-
 .search > input {
-  left: 0;
-  height: 30px;
   width: 539px;
   padding: 20px;
   position: absolute;
+  left: 0;
+  height: 30px;
   top: 420px;
   border: none;
+}
+.search > input:focus {
+  outline-width: 0;
+}
+.search > button {
+  position: absolute;
+  left: 0;
+  top: 480px;
+  text-transform: inherit !important;
+  background-color: #ff7779;
+  color: white;
+  width: 579px;
+}
+.search > button:hover {
+  background-color: white;
+  color: #ff7779;
 }
