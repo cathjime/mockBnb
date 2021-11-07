@@ -6,6 +6,7 @@ import PeopleIcon from "@material-ui/icons/People";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 
+//date picker
 const Search = () => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
@@ -26,7 +27,7 @@ const Search = () => {
       <h2>Number of Guests</h2>
       <PeopleIcon />
       <input min={0} defaultValue={2} type="number" />
-      <Button>Search AirBnB</Button>
+      <Button className="button">Search AirBnB</Button>
     </div>
   );
 };
