@@ -5,6 +5,7 @@ import { Button } from "@material-ui/core";
 import PeopleIcon from "@material-ui/icons/People";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
+import { useNavigate } from "react-router-dom";
 
 //date picker
 const Search = () => {
@@ -20,6 +21,7 @@ const Search = () => {
     setStartDate(ranges.selection.startDate);
     setEndDate(ranges.selection.endDate);
   };
+  const navigate = useNavigate();
 
   return (
     <div className="search">
@@ -27,7 +29,9 @@ const Search = () => {
       <h2>Number of Guests</h2>
       <PeopleIcon />
       <input min={0} defaultValue={2} type="number" />
-      <Button className="button">Search AirBnB</Button>
+      <Button onClick={() => navigate("/search")} className="button">
+        Search AirBnB
+      </Button>
     </div>
   );
 };

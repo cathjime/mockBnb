@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import { Button } from "@material-ui/core";
+import { useNavigate } from "react-router-dom";
 import "./Banner.css";
 import Search from "./Search.js";
 
@@ -9,6 +10,8 @@ const Banner = () => {
   const toggleButtonText = () => {
     setButtonText(!buttonText);
   };
+
+  const navigate = useNavigate();
 
   return (
     <div className="banner">
@@ -37,7 +40,9 @@ const Banner = () => {
         <h5>
           Plan a different kind of getaway to uncover the hidden gems near you.
         </h5>
-        <Button variant="outlined">Explore Nearby</Button>
+        <Button onClick={() => navigate("/search")} variant="outlined">
+          Explore Nearby
+        </Button>
         {/* look up material ui core button types in docs */}
       </div>
     </div>
