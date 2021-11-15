@@ -3,9 +3,8 @@ import Home from "./Home";
 import Header from "./Header";
 import Footer from "./Footer";
 import SearchPage from "./Searchpage";
-
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Search from "./Search";
+import CardDetails from "./CardDetails";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -14,6 +13,7 @@ function App() {
         <Header />
 
         <Routes>
+          <Route path="/details" element={<CardDetails />} />
           <Route path="/search" element={<SearchPage />} />
 
           <Route path="/" element={<Home />} />
